@@ -1,0 +1,6 @@
+1) Constructor - class cagrilanda ilk iwleyen metod , classa parametr daxil etmek isteyende ondan istifade edirik
+2) Destructor - class'da en son iwleyen metod , adeten db classlarda ve s connection'u sondurmek ve.s ucun istifade olunur .
+
+class cagrilan kimi awagidaki ardicilliqla metodlar iwleyir .
+   - constructor , eger cagrilmis metod varsa o daha sonra destructor , hansisa metod cagrilmayibsa contructordan sonra birbawa
+   destructor iwleyir .

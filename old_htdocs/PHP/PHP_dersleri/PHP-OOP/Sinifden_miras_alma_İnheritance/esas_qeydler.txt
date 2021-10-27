@@ -1,0 +1,11 @@
+Miras alma - Inheritance
+Bir sinifden miras almaq ucun extends sozunden istifade olunur .
+   class Usaq extends Valideyn{
+
+   }
+Bu zaman werti olaraq miras verene Parent , miras alana ise child deyilir .
+Miras alan sinif valideyn sinifin butun public ve protected property ve metodlarina sahib olur . Yeni istifade ede bilir .
+
+
+Qeyd : Eger child sinifde parent sinifde olan eyni method adindan istifade olunubsa ve o sinifde parentin hemin metodunu istifade
+etmek isteyirikse , bu zaman parent::hemin_metod() weklinde edirik bunu .

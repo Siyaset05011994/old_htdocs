@@ -1,0 +1,2 @@
+Erzagin kutlesini , adini , kiloqraminin qiymetini daxil edib o erzagin yekun qiymetini ve sonda butun alinanlarin
+yekun qiymetini cixaran bir class yaradacam +

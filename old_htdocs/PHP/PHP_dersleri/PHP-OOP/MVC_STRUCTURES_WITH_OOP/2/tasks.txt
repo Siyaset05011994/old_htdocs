@@ -1,0 +1,7 @@
+1)Route::get metodunda problem var . controllerleri adiyla indexde require etmesem cagira bilmirem Routede
+call_user_func ile ;
+
+indi duzeltdiyim htacces iwleyir +
+
+index.php faylinda cagirdigim APP_URL slash yox bir de ters slash olan versiyasini yoxlayacam . Indi controller cagiranda
+tapmir controller php faylini orda -

@@ -1,0 +1,52 @@
+.operation_btn{
+    border-bottom: 1px solid;
+    color: black;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+table{
+    width: 100%;
+}
+
+table td {
+    padding: 5px;
+}
+
+table th {
+    padding: 3px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.content_items_bg{
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#view_articles_div{
+    width: 40%;
+}
+
+#create_form_div{
+    display: none;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.article_items{
+    width: 100%;
+    padding: 3px;
+}
+
+input.article_items{
+    height: 30px;
+}
+
+#store{
+    cursor: pointer;
+}

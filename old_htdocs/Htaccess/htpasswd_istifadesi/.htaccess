@@ -1,0 +1,7 @@
+
+# htaccess ile yoxlama , serverde yoxlamada AuthUserFile kimi ona uygun yolu yazacam , sayt tam hazir olanda ise bu kod hisseciklerini kommente alacam
+AuthType Basic
+AuthName "htaccess yoxlama"
+AuthUserFile C:\xampp\htdocs\Htaccess\htpasswd_istifadesi\.htpasswd
+Require valid-user
+# htaccess ile yoxlama , serverde yoxlamada AuthUserFile kimi ona uygun yolu yazacam , sayt tam hazir olanda ise bu kod hisseciklerini kommente alacam

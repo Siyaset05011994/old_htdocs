@@ -1,0 +1,5 @@
+Google'e yazdigim sual zamani qarwima ilk cixan saytlar onsuz bellidir . Yeni menbeleri awagiya yaziram .
+
+1)https://www.w3schools.com/php/php_oop_what_is.asp (burda oop'e aid ekser weyler , belke de hamisi var . Vaxtawiri arawdiracam)
+2)https://www.youtube.com/playlist?list=PLciTNdnGYqpFIyafqIkFHiHFbGdE6Y35K   bu kanalin sonraki derslerinde OOP bawligi ile
+yazilmiw videolar .

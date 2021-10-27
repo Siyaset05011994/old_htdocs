@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+DirectoryIndex pages/1/home.php # saytda ilk acilacaq sehifeni teyin edir .
+RewriteRule ^about$ pages/1/about.php [NC,L] # hansi sozu yazanda hara getmelidir onu teyin etmek olur .
+RewriteRule ^blogs$ pages/1/blogs.php [NC,L]
+
+ErrorDocument 404  pages/error-page.php

@@ -1,0 +1,64 @@
+Abstract class ve Interface'ler esas etibarile toreme siniflerine bezi sablonlari ve bezi wertleri mecbur etmek , qisasi
+alt siniflerin seliqesini , anlawiqli olmasini temin etmek ucun istifade olunur . Bundan bawqa OOP'nin verdiyi diger
+funksionalliqlarla yanawi bunlar da tekrar kodun qarwisini almaga komek edir ve s.
+
+Abstract classlar :
+   -class sozu qarwisina abstract sozunu elave etmekle duzelir :
+       abstract class Test{}
+    en azi bir abstract metodu olan class'lara abstract classlar deyilir .
+    Abstract class'dan obyekt yaratmaq olmur .
+    Abstract class icinde de adi class'lar kimi property'ler teyin etmek olur .
+
+   -Abstract metodlar da qarwisina abstract sozu artirmaqla duzelir ve bu methodun fiqurlu moterizesi olmur , yeni metod teyin olunur
+    amma icinde iw gormek olmur . Abstract classdan toreme alinan sinifde mutleq abstract metodlarla eyni adli metodlar olmalidir.
+     Toreme sinifde isteye gore basqa property ve metodlarin olmasi problem deyil ;
+         abstract public function test();
+    Yeni abtract metod hansisa hesablama aparmaq yerine alt sinifde yaradilmaga mecbur olunan eyni adli methodlarin geri qaytarmali
+    oldugu tipleri ve s mecburi etmek ucun istifade olunur .
+        abstract public function test():string; tipli
+
+    Abstract metodlar private ola bilmez (cunki miras alan sinif ona mecburdur ve private ise ancaq sinif ici elcatan olur)
+    Toreme sinifdeki metodun access modifier'i abstract metoddan daha cox mehdudlawdirila bilmez :
+
+ Interface'ler - Interface awagidaki kimi teyin olunur :
+    interface Test{}
+    Icindeki metodlar onsuz da ozunu abstract metod kimi aparir deye metod evveline abstract sozu yazilmir .
+    Yanlic public access modifier'inde ola biler :
+        public function test();
+    Interfacelerde property'lere icaze yoxdur . Yanliz elan olunub istifade olunmayan public metodlar ve lazim gelerse bu metodlarin
+    parametrleri ve const deyiwenler ola biler .
+    Interface'den toreme almaq ucun implements sozcuyunden istifade olunur ve bu hadise polimorfizm adlanir .
+
+    Interfaceler esas etibarile abstract classlarda oldugu kimi toreme siniflerine eyni adli metodlari yazmaga mecbur edib ,
+    siniflerin seliqeli ve wablon wekilde olmasi ucun istifade olunur .
+    Asagi yuxari eyni meqsedlere gore istifade olunmalarina baxmayaraq , Abstract classla benzer ve ferqli cehetleri var .
+
+    Bir sinif arasina vergul qoyulmaqla birden cox interface'ni implement ede biler
+         class a implements b,c{}
+    Bir interface basqa bir interfacenin toremesi ola biler
+         interface a extends b{}
+
+
+    Oxwar xususiyyetleri:
+      -Hem abstract classlar hem de interfacelerden obyekt yaratmaq olmur ;
+      - Her ikisinin esas funksiyasi onlardan inheritance olacaq sinifleri bezi hessas wertlere emel etmeye mecbur edib , daha
+      wablon bir struktura elde etmekdir .
+
+
+    Abstract class ve Interface arasindaki esas ferqler awagidakilardir :
+       - Abstract class ozunde property ve abstract olmayan metod saxlaya bilir , Interface ise hecbirini ede bilmir ;
+       - Abstrac classin abstract metodu public ve protected ola bilir , interface metodlari ise yanliz public ola biler ;
+       -Interfacelerin butun metodlari abstract sayilir , lakin bu funksiya evvelinde qeyd olunmur .
+       - Abstract class diger abstract class'dan toreme ala bildiyi kimi , adi classdan da toreme alir , Interface ise yanliz
+       interfaceden toreme alir .
+
+
+
+
+Netice  : Hem abstract classlar hem de interface'ler teqriben eyni mentiq ucun istifade olunur , yanliz bunu ederken bezi ferqli xususiyyet-
+leri olur . Eger size yanliz sinif metodlarini qaydaya salmaq , yeni bir yerden geelcek metodlarin ondan istifade eden butun siniflerde
+override olunmasinin mecburu olmasi hali lazimdirsa buna gore sadece Interface bes edir .
+Yox eger hem de icerisinde abstract metodlardan basqa , property ve normal metodlarin olmasi da lazimdirsa o zaman abstract class istifade
+etmelisiniz . Yeni hansini ne zaman istifade etmeyiniz , sizi neyin qane edeceyi ile bagli weydir .
+Bununla yanawi bir sinife coxlu sayda interface implements etmek mumkun oldugu halda, o sinif yanliz bir abstract
+classdan miras ala biler . Bu kimi ferqli cehetlerini de goz onunde tutaraq secim sizindir .

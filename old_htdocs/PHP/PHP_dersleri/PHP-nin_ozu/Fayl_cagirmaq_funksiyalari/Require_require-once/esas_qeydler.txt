@@ -1,0 +1,3 @@
+require ve require_once de include ve include_once kimi php sehifeye fayli cagirmaq ucun  istifade olunur .
+her ikisi  hem  moterizesiz hem moterizeli dirnaq icinde yazila bilir .
+require yazildigi say qeder sehifeni cagirir , require_once ise nece defe yazilir yazilsin yanliz bir defe cagiri .

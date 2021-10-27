@@ -1,0 +1,26 @@
+Class ve Obyektler .
+Class ile obyekt ferqi : Class daha geniw bir anlayiwdir , obyekt ise o geniw anlayiwin mueyyen kopyasini ozunde saxlayan bir
+anlayiw . Misal ucun meyveler sinifdir , alma;armud;nar ve s obyekt .
+
+1) constructoru parametr teleb edecek wekilde yazmadiqca classi awagidaki kimi cagirmaq olar :
+        new Mehsul;
+   eks halda :
+        new Mehsul('constructorda_teleb_etdiyim_hansisa_parametr');
+
+2) public deyiwenleri(property) awagidaki usulla goturmek olar(protected ve private deyiwenler class colunden
+elcatmazdir ve onlara catmaq ucun class icinde public bir metod yaradib onlari return etmek lazimdir) :
+       $mehsul= new Mehsul;
+       echo $mehsul->deyiwen_adi;
+
+3) const deyiwen
+       const AD='Siyaset';
+   weklinde teyin edilir .
+
+4) const deyiwenleri awagidaki usullarla goturmek olur :
+     - $this::AD , self::AD (class icinde )
+     - echo Mehsul::AD; // constructorun parametr teleb edib etmemesi ferq elemir
+     - $mehsul=new Mehsul;
+       ech $mehsul::AD;
+
+
+

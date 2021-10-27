@@ -1,0 +1,17 @@
+Esas qeydler :
+
+  1) Esas 3 cur Access Modifier'den istifade olunur :
+      - public(sinifin icinden , colunden , toreme siniflerden ve.s , biz sozle her yerden elcatandir);
+      - protected(sinifin icinden ve toreme siniflerden elcatandir);
+      - private(yanliz sinifin icinden elcatandir);
+
+Qeyd: Umumiyyetle hansi property yaxud funksiyaya elcatimligi nece teyin edeceyimiz o deyiwen yaxud funksiyani
+harda istifade etmeyimize ve tehlukesizliye baglidir . Sinif icinde her ucunu istifade etmek olur .
+Misalcun : verilmiw property yaxud metodu eyni zamanda hem sinif colunde , hem de bu sinifden toreme siniflerde istifade
+ etmek vacibdirse ona public ;
+ Toreme siniflerde istifade etmek vacibdirse protected ;
+ Sinif icinden bawqa hecyerde istifade etmek vacib deyilse private olur .
+
+ Sonda onu da qeyd etmek lazimdir ki , bezi property ve methodlarin mentiqi olaraq gizliliyi saxlanmalidirsa
+ onlari private edib , lazimi yerde istifade etmek ucun de hemin sinif icinde lazimi icazeli metoddan cagirmaq daha
+ meqsede uygundur .

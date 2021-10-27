@@ -1,0 +1,43 @@
+1) Encapsulation(Enkapsuliyasiya) - Bezen oop'de teyin etdiyimiz property yaxud metodlarin o koddan yararlanacaq
+insanlarin gormesi , ona cata bilmesi , deyiwmesi vacib deyil yaxud cox tehlukeli hal olur .
+Bunun ucun biz access modifier'lerden istifade edib muvafiq mentiq ile property yaxud metodlarimizi lazim oldugu halda
+lazimi yerlerde gosterir ,deyiwilmesine icaze veririk .
+Bu zaman access modifier'lerden istifade edirik : public, protected,private;
+Bu hadiseye Encapsulation deyilir .
+
+2)Inheritance(Miras alma) - Tutaq ki A ve B sinifleri var . Bunlarin benzer funksionalliq teleb eden metodlari var .
+Bu zaman her sinifde eyni funksinalligi tekrar yazmamaq ucun Bir ana class yaradib lazim olan yerlerde o classdan miras
+alinir .
+
+     class C{
+        public funtcion salam(){
+           echo 'salam';
+        }
+     }
+
+      class A extends C{
+         public funtcion salam_de(){
+            return $this->salam();
+         }
+      }
+
+      class B extends C{
+         public funtcion salam_de(){
+             return $this->salam();
+         }
+      }
+
+      Bu hadiseye Inheritance - Miras almaq deyirler . Miras alan sinif Valideyn sinifin butun icaze verilen property ve
+      metodlarini ozunde saxlayir .
+
+
+3)Polymorphism(Polimorfizm) - Obyektin ozunu coxlu ferqli wekillerde apara bilme bacarigi da demek olar buna . Buna misal olaraq Overriding ve Overloading
+proseslerini gostermek olar .
+
+Overriding - ust sinifdeki metodu alt sinifde eyni adda icini deyiwib istifade etmeye deyilir .
+Overloading - bir metodu hedden artiq yuklemek , php'de bunun birbawa yolu yoxdur , adeten awagidaki funksiyalarda baw verir 
+
+func_num_args(); funksiya cagrilanda parametr sayini geri qaytarir .
+func_get_arg(); indexine gore parametrleri qaytarir .
+
+

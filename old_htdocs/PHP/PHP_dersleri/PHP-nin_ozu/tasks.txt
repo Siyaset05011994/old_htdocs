@@ -1,0 +1,18 @@
+call_user_func() ve call_user_func_array() funksiyalarini etrafli arawdirib her birine bir nece numune meselesi
+yazacam -
+
+awagidakilari arawdirib numuneler yazacam :
+  is_callable(); +
+  function_exists(); // funksiyanin elan edilib-edilmediyini bool olaraq qaytarir . +
+  method_exists();  //obyekt icinde metodun olub-olmadigini yoxlayir +
+  callback novlu funksiyalari ; -
+  call_user_func();
+  $_SERVER'e aid lazimli herweyi (REQUEST_URI ve s);
+  http://www.hackingwithphp.com/4/19/0/variable-functions bu url'deki funksiyalari
+  hem burdan tercume ederek , hem de umumi arawdiracam .
+  __DIR__ ;
+
+
+
+2) php global deyiwenler , define deyiwenleri ve ferqlerini oyrenecem ; +
+3) anonim funksiyalari oyrenecem ve bir nece numunede istifade edecem ; +

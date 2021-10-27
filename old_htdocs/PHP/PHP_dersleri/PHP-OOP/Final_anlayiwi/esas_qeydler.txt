@@ -1,0 +1,3 @@
+Final acar sozu hem sinif hem de metodlari bawlatmaq olar .
+Final acar sozu ile bawlayan metodlar child siniflerde override oluna bilmez , sinifler inheritance oluna bilmez .
+Final funksionalliginin esas meqsedi de budur .

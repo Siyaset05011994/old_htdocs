@@ -1,0 +1,24 @@
+polimorfizimi arawdiracam , tek interfacelerle baglidi ya inheritance prosesi de ona aiddi ve s suallarima cavab
+tapib muvafuq qovluqda qeydlerimi elave edecem .
+
+1) OOP movzularini arawdiracam , Her movzuya aid bir qovluq olacaq , daha sonra ona aid numuneler yazib
+o haqda hemin qovluqdaki txt faylinda en lazimli ve ince ayrintilari yazacam . Butun movzular bitenden sonra
+nevaxtsa baxib herweye agah olmaq ucun o txtleri bir umumu papkaya bawliq adlari ile atacam (interview zad olanda
+tezbazar oxumaq ucun ) . Bunu mysql , postgresql , laravel ve s ucun de edecem -
+
+Bes qeder movzu oyrendiyimi duwunduyum andan etibaren php oop istifade olunaraq kodlawdirilmiw proyektleri (ele ilk Slim wekil classindan bawlayacam , gorum
+illerdir istifade etdiyim classda hansi kodlar istifade olunub ve ne dir :D)
+(yaxud youtubede esas turkce , olmasa xarici dillerde rus yaxud ingilis dillerinde oop proyektler hazirlayan videolari) , alinsa frameworklari
+arawdirib harda hansi oop anlayiwlarini istifade ede bilerem , yaxud istifade etsem mene ne qazandirir . Beynimdeki bu suallara
+da cavab tapdiqdan sonra artiq lazim olan seviyeye catdigimi deqiqlewdirenden sonra bawlangic olaraq sade wirket saytlarinda
+mene asanliq getirecek , rahat istifade usullari olan bir framework tipli proyekt yazmaga bawlayacam .
+
+oop'e aid diger menbelere de baxib diger weyleri de eyni mentiqle oyrenecem (conseptler ve s . daha cox ve ferqli menbelerden
+nezeriyye oxuyacam )
+
+sonda https://www.w3schools.com/php/php_oop_what_is.asp bu unvana daxil olub , lazim olanda google sehifeni tercume et funksionalligindan
+da istifade edib ordaki butun oop movzularini arawdiracam gorum oyrenmeli oldugum daha neler var ;
+
+Sonda php oop ile sade ve butun mumkun funksionalligi oop ile olan bir sayt hazirlayacam ki beynimde birdefelik oturuwsun oop
+mentiqi .
+

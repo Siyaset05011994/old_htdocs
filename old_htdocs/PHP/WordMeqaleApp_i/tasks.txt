@@ -1,0 +1,5 @@
+php form yaradacam , meqale paylawmaq formu kimi . yaratdigim bawliga gore gedib qovluq , word fayli yaradib
+verdiyim bawligi , contenti ora istediyim dizaynda atacaq (insert , update , delete funksionalligi olacaq ) -
+
+elave edende cixan get funksiyasinda ikid efe cagirir datalari cedvele -
+

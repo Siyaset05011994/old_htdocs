@@ -1,0 +1,8 @@
+Php'nin bu hazir funksiyasi bize funksiya , metodlara muraciet edib , onlari iwletmeye imkan verir . Bu zaman isteye gore
+geriye muxtelif tiplerde parametrler de qaytarmaq olur .
+Ilk baxiwda bu cox lazimsiz bir wey imiw kimi gelir . Funksiya yaxud metodu iwletmek ucun elbette buna ehtiyacimiz yoxdu .
+Obyekt  yaradib (eger static deyilse) metodu cagirmagimiz kifayetdir , bes niye gore call_user_func() istifade edek ?
+Bunu MVC strukturadan Model View Controller Route sistemlerini hazirlayanda cox ehtiyacimiz olacaq .
+En vacib iwlenme usularini muvafig faylda gostermiwem .
+
+call_user_func_array istifadesini tam bawa duwmedim (parameter kimi array gondersem de yanliz ilk parametrini qaytarir).

@@ -1,0 +1,48 @@
+Namespace hem bir proyekt uzerinde iwleyen programcilarin , hem de php compiler'in class , istifade etdiyiniz
+kod hisseciklerini bir yere yigdiginiz fayl ve.s kimi weylerin yolunu sehv salmamasi ucun istifade etdiyimiz
+bir funksionalliqdir .
+Qeyd : Qetiyyen faylin yolunu vermek mecburiyyet deyil !
+
+Tutaq ki a\test.php ve b\test.php yolu olan iki eyni fayl ve icinde eyni adli class var . Onlarin ikisini de eyni yerde istifade
+etmek lazim gelse ikisini de include etmek lazimdir . Bu zaman new Test() kodu yazildiqda php compiler hansi Test classini
+cagirmaq lazim oldugunu ayird ede bilmir ve error verir . Namespace tam da bu an komeyimize catir .
+
+misal ucun namespace c\a;
+
+Esas qaydalari :
+      - namespace yazilan faylda php aciliw hisseciyinden sonraki ilk setirde namespace teyin etmek kodu olmalidir , ondan
+        yuxarida her hansi kod yazilsa xeta verecek ;
+      - adeten faylin yoluna uygun ad hissecikleri secilir ve bu hissecikler bir-birinden ters slash iwaresi ile ayrilir .
+      - eyni faylda birden cox namespace yazila biler (adeten her faylda bir sinif ve s olur deye bir namespace istifade olunur) :
+         namespace c\a;
+         class test{}
+
+         namespace c\b;
+         class test{}
+
+         birden cox namespace goruntu olaraq qariwmasin deye sinfi namespacenin fiqurlu moterizeleri ile muhasireye almaq da olar:
+
+         namespace c\a{
+           class test{}
+         }
+
+         namespace c\b{
+           class test{}
+         }
+
+      -  Artiq teyin olunmuw namespace use hisseciyi istifade ederek ve awagidaki usulla cagrilir :
+
+                 use c\a\test;
+                 new test();
+
+         yuxaridaki \test hissesi c\a namespacesindeki class , interface ve.s adidir .
+
+      - Benzer adlara sahib iki namespaceni qariwdirmamaq ucun as hisseciyi ile bir sozle iwarelemek olar
+
+         use c\a\test as custom_test ;
+         new custom_test();
+
+
+
+
+

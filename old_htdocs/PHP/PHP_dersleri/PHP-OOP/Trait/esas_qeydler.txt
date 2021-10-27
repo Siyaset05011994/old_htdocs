@@ -1,0 +1,72 @@
+Trait sinif kimi yaradilir , lakin class evezine trait sozcuyu ile yaranir :
+    trait Test{}
+Trait'in php diline gelme sebebi : Bir sinife yanliz bir sinifi inheritance etmek mumkun  olur , ancaq bir sinife
+birden cox traiti cagirib icindeki metodlardan istifade etmek olur .
+Trait'ler use sozcuyu ile cagrilir :
+   class Test2{
+      use Test, Test3, Test4 ;
+   }
+
+Priaritetler :
+  Tutaq ki eyni adli metod hem trait'de hem de sinifin inheritance olundugu parent sinifde var .
+  Bu zaman trait'deki metod parent sinifdeki metodu override edecek .
+  Eger trait'de ve use olundugu sinifde eyni adli metod varsa , bu zaman da sinifdeki metod trait metodunu override
+  edecek .
+
+Cagrilmiw iki traitde eyni adli metodlar varsa kodu iwe salanda php hansini istifade etmeli oldugunu ayird ede bilmir
+deye xeta fatal error verecek . Bunun qarwini almaq ucun insteadof'dan istifade edirik :
+
+   trait A{
+     public function test(){
+
+     }
+     public function test2(){
+
+     }
+     protected function test3(){
+
+     }
+   }
+
+   trait B{
+        public function test(){
+
+        }
+        public function test2(){
+
+        }
+   }
+
+   class C{
+     use A,B{
+       A::test insteadof B; // burda A'nin test'ni istifade edeceyimi bildirdim .
+       B::test2 insteadof A; // burda B'nin test2'ni istifade edeceyimi bildirdim .
+     }
+   }
+
+   Eger yene de B yaxud A-nin eyni adli metodlarini iwletmek lazim gelirse bu zaman awagidaki kimi o metodun sinif
+    icindeki muveqqeti adini as sozcuyu deyiwirik
+
+   class C{
+        use A,B{
+          A::test insteadof B; // burda A'nin test'ni istifade edeceyimi bildirdim .
+          B::test2 insteadof A; // burda B'nin test2'ni istifade edeceyimi bildirdim .
+          A::test2 as test2_;
+          B::test as test_;
+        }
+   }
+
+   Trait metodlarinin acces modifier'ini class icinde deyiwmek lazim gelerse :
+     use A {test3 as public} // use A {test3 as private}
+   kimi de ede bilerik .
+
+   Trait'lerde diger traitlerden istifade etmek olur .
+
+
+ Traitin bize verdiyi en esas ozellik onun self ve parentidir .
+ Trait icinde diger traitden istifade olunursa onun her hansi method yaxud property'ne catmaq ucun self sozcuyu iwlenir :
+ Parent ise traitin cagrildigi classin parent classinin property yaxud metoduna muraciet etmek ucun iwlenilir .
+
+ Bir sozle trait icindeki metod ve property'ler ozunu use olundugu classin property ve metodlari kimi aparir .
+ Misal ucun bir sinifde trait istifade edib , trait property yaxud metodunun access modifierini private etsek ,
+ o sinifden inheritance almiw sinifde o funksiyadan istifade etmek olmayacaq .

@@ -1,0 +1,4 @@
+1) https://www.cbar.az/currencies/15.03.2021.xml bu unvandan datalari parse edecem .
+2) front terefde form yaradacam , form icinde bir input olacaq , men ora hansisa reqem yazacam ve selectbox ile sececem mezenneleri(avro , usd dollar ves)
+ 
+secdiyim mezenneye gore deyeri getirecek .

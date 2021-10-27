@@ -1,0 +1,6 @@
+include ve require nece defe istifade olunsa fayli o sayida cagirir .
+include_once ve require_once ise nece defe cagirirq cagiraq fayli yanliz bir defe cagirir
+
+include'ler ve require'ler arasindaki ferq ise include'ler fayl tapilmazsa warning xetasi verir , amma sonraki setr kodlari
+iwleyir ,
+require'lerde ise fayli tapmirsa warning errorundan sonra fatal error verir ve alt setir kodlari caliwmir .

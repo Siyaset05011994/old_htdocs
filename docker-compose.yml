@@ -1,0 +1,17 @@
+version: "3"
+services:
+  nginx:
+    image: nginx:1.18.0
+    container_name: nginx_htdocs
+    ports:
+      - 8000:8000
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./old_htdocs:/old_htdocs
+  php:
+    image: php:fpm
+    container_name: php_htdocs
+    ports:
+      - 9000:9000
+    volumes:
+      - ./old_htdocs:/old_htdocs

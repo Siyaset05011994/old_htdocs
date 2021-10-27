@@ -1,0 +1,7 @@
+abstract ve interfaceler haqda geniw bir numune meselesi yazib , sonra trait ve diger oop weylerini arawdiracam
+
+Abstract ve interfaceleri arawdiracam , hem de bundan sonra oop ile bagli istifade edeceyim butun fayllarda maximum
+namespace ve oop'nin diger istifadesi ustunluk verecek funksionalliqlarindan istifade edecem .
+
+men funksiyalar qabaginda type declaration werti yazanda niye php versiyam 7.4+ olmasina baxmayaraq compiler qebul etmir bunu ?
+Cixan mesajdaki php versiyasindan daha ust seviyye php versiyasi iwletsem de niye alinmir mende ?

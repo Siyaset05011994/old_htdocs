@@ -1,0 +1,17 @@
+define views , routes , base_url ve s teyine decem hardasa . helelik ise fayl views header() edende realpathindan istifade edecem
+tam yolla aparir ancaq .
+helperdeki define basepath app'in ici hissesinin ters slashlarini slash edib yoxlayacam .
+
+
+
+
+
+1) OOP ile mvc struktura yaradacam , sade ve istifadeye yararli olacaq .
+    - Modeller ana modelden , Controllerler ana controllerden inheritance olunacaq ;
+    - Maximum OOP prinsiplerine emel edecem kod mentiqinde (oz kodunu tekrarlama ve s. Bunun ucun oyrendiyim mozvulardan
+    yerinde ve qaydasinda istifade etmeyim kifayetdir ) ;
+    - classlarimi wablonlawdirmaq ucun interface ve abstract classlardan istifade etmek ve s iwleri edecem .
+    - Controllerde birbawa modele qowulmaq olmayacaq ;
+    -
+
+

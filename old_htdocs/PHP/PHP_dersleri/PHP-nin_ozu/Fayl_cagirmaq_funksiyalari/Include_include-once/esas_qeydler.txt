@@ -1,0 +1,27 @@
+hem include hem de include_once sehifeye php faylini cagirmaq ucun istifade olunur .
+her ikisi hem moterizesiz qowa dirnaq icinde hem de moterize icinde qowa dirnaq icinde iwleyir .
+
+Ferqleri :
+  include ile bir fayli sehifeye cagiranda nece defe include etsek o sayda fayl icindekiler yuklenecek .
+  inlcude_once ise yanliz bir defe yukleyir . (once sozunun menasi da 'bir defe' demekdir )
+
+  Tutaq ki , index ve header faylimiz var .
+
+  header.php :
+
+  <?php
+  $a=2;
+
+  index.php
+  <?php
+  include "header.php";
+  $a=3;
+  include "header.php";
+  echo $a;
+
+  bu kod orneyinde biz eslinde $a-ni deyiwdik , amma include edende sehife yene yuklendi deye bizim deyiwikliyimiz sifirlandi
+  ve $a-nin deyeri header.php sehifesindeki oldu .
+
+  cagirma prosesini include_once ile etsek ve ne qeder tekrar yazsaq da yanliz bir defe cagirdigi ucun $a-nin qiymeti biz index
+  faylinda verdiyimiz kimi olacaq .
+

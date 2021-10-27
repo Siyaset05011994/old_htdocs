@@ -1,0 +1,1 @@
+Elementleri verilmis array elementlerinin kvadratina beraber olan yeni array yaradin .

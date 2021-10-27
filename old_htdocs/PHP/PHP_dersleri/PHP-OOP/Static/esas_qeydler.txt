@@ -1,0 +1,28 @@
+Statici istifade etmeyimizde sebeb :
+   Biz property ve methodu static olmadan yaradanda ve sinifden her obyekt yaradanda static'siz yaratdigimiz bu property ve
+   metodlar yeniden ramda yer ayirir ve bu performans itkisi demekdir . Ona gore de bezi hallarda bezi property ve metodlari
+   static teyin etmek performansimizi artirmaq cehetden daha duzgundur , eyni zamanda static method ve property'leri
+   obyekt yaratmadan cagira bildiyimiz ucun ( sinif_adi::$property, sinif_adi::metod() ) bu da performansi artirmaga komek edir .
+
+   Istifade sintaksisi :
+    '<access_modifier> static' (access_modifier yerine public , protected, private qoyulur) kimi
+    istifade olunur , default public qebul etdiyi ucun qarwisina public yazmasaq
+    da olar (static $a)
+    Static esasen tez-tez istifade edeceyimiz yaxud evvelki datalarindan istifade edeceyimiz deyiwen ve metodlar olur .
+    Static'in en ferqli ceheti - sinifden obyekt yaratmadan cagirmaq olur :
+       -Class_adi::$a (deyiweni);
+       -Class_adi::a() (metodu);
+    Staticin iwleme mentiqi ise bucurdur : Biz static deyiwen yazanda o bizim verdiyimiz qiymeti ozunde saxlayir , gelen defe
+    hemin deyiwen istifade edilende , evvelki deyeri de nezere alir : Buna aid numuneni mesele / Qebz.php
+    sinifinde yazmiwam .
+    Misalcun eger static $a='salam' ; vermiwikse o deyeri saxlayir ve novbeti defe onu istiofade edende evvelkinin uzerine gelir
+    . daha novbeti defe de evvelki hamisinin uzerine yenini gelir . Buna gore de bize deyeri saxlamasi lazim olan yerlerde
+    static'den istifade edeceyik ;
+
+
+Qeyd: static metod icinde $this yox yanliz self:: istifade oluna biler ;
+      static metod icinde ancaq static property istifade oluna biler (static olmayan metod istifade oluna biler) ->
+Buna sebeb odur ki , staticler obyekt yaratmadan istifade etmek ucun nezerde tutulub deye static olmayan property ve metodlari
+iwletmek ucun ise mutleq obyekt yaradilmalidir .
+Bundan bawqa static deyiwenler $this ile yox self:: ile cagrilir .
+static metodlar ise this ile de cagrila bilir .

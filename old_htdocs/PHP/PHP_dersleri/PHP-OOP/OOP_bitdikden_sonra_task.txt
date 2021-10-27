@@ -1,0 +1,4 @@
+1) OOP ile mvc struktura yaradacam , sade ve istifadeye yararli olacaq .
+    - Modeller ana modelden , Controllerler ana controllerden inheritance olunacaq ;
+    - Maximum OOP prinsiplerine emel edecem kod mentiqinde (oz kodunu tekrarlama ve s. Bunun ucun oyrendiyim mozvulardan
+    yerinde ve qaydasinda istifade etmeyim kifayetdir ) ;

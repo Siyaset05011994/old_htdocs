@@ -1,0 +1,26 @@
+Esas 2 istifade formasi var :
+   - verilmiw add funksiya yaxud metodun elcatan , yeni cagrila bilen oldugunu yoxlayir ;
+   - verilmiw sozun funksiya yaxud metod adi ola bilib-bilmeyeceyini yoxlayir ;
+
+3 parametr ala bilir :  is_callable($var mixed, $syntax_only=false boolean, $callable_name string);
+   -$var yoxlanilan deyiwen ;
+   -$syntax_only : default false olur . true edende funksiyanin cagrila bilib-bilmediyini yoxlayir ;
+   -$callable_name : kontrol edilen deyiwenin ($var) funksiya yaxud metod adini qaytarir .
+
+   Numune
+
+   function test(){
+
+   }
+
+   $a='test';
+
+   var_dump(is_callable($a));// $a adda  elcatan bir funksiyanin olub-olmadigini yoxlayir ;
+   var_dump(is_callable($a,true));//$a adda funksiya yaxud metod adi ola bilib-bilmeyeceyini yoxlayir ;
+   var_dump(is_callable($a,false,$function_name)); // $a adda funksiya yaxud metodun olub olmadigini yoxlayir
+    echo $function_name;// hemin funksiyanin adini qaytarir .
+
+   class'da istifade etdikde $var'a array menimsedirik . arrayin 1-ci valuesi  class'in obyekti , 2-ci terefi ise
+    yoxlamaq istediyimiz metod yazilir .
+   is_callable([new Test , 'test']);  //  (  is_callable([new Test , 'test'],false,$callable_name) ) weklinde
+

@@ -1,0 +1,2 @@
+parent ,self arawdiracam traitde
+trait metodlarinin access modfierlerini use olundugu classlar icinde muveqqeti deyiwdirmeyi arawdirib numune yazacam .

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+
+	(function($) {
+
+      var ajaxQueue = $({});
+    
+      $.ajaxQueue = function(ajaxOpts) {
+    
+          var oldComplete = ajaxOpts.complete;
+      
+          ajaxQueue.queue(function(next) {
+      
+            ajaxOpts.complete = function() {
+              if (oldComplete) oldComplete.apply(this, arguments);
+      
+              next();
+            };
+      
+            $.ajax(ajaxOpts);
+          });
+      };
+    
+  })(jQuery);
+
+
+
+     $(document).ready(function(){
+        for (var i = 1; i < 3 ; i++) {
+              $.ajaxQueue({
+                type:'POST',
+                url:'index.php',
+                data:"i="+i,
+                success:function(response){
+                  console.log(response);
+                }
+              })
+        }
+     })
+    
+</script>
+</html>
